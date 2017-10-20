@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Registration</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" media="screen,projection"/>
+	  <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+      <script>
+         $(document).ready(function(){
+         $('ul.tabs').tabs();
+         });
+         
+$(document).ready(function(){
+		      
+			  $("#a,#b,#c").removeClass("col s12 l4");
+			  $("#a").addClass("col s12 l4 offset-l1");
+			  $("#b").addClass("col s12 l4 offset-l2");
+              $("#three").hide();
+			  
+              $("#twotab").click(function(){	          
+			  $("#a,#b,#c").removeClass("col s12 l4");
+			  $("#a").addClass("col s12 l4 offset-l1");
+			  $("#b").addClass("col s12 l4 offset-l2");
+              $("#three").hide();
+              $("#two").show(1000);
+              });
+              });
+         
+              $(document).ready(function(){
+              $("#threetab").click(function(){
+              $("#a").removeClass("col s12 l4 offset-l1");
+			  $("#b").removeClass("col s12 l4 offset-l2");
+			  $("#a,#b,#c").addClass("col s12 l4");
+              $("#two").show(1000);
+              $("#three").show(1000);
+              });
+              });
+         
+         $(document).ready(function() {
+         $('select').material_select();
+         });
+             
+      </script>
+   </head>
+   <body>
+      <div class="row">
+         <div class="col s12">
+            <div class="card-panel blue-grey darken-4">
+               <span class="white-text text-darken-2">
+                  <h5 class="center-align">TEAM REGISTRATION: THE INITIATIVE</h5>
+               </span>
+            </div>
+         </div>
+      </div>
+     
+          
+			   
+			      
+                  <div class = "row">
+				  <div class = "col s12">
+                  <p class = "col s6 center">
+                 <input name="group1" type="radio" id="twotab" checked />
+                 <label for="twotab">2 Members</label>
+                 </p>
+                 <p class = "col s6 center">
+                 <input name="group1" type="radio" id="threetab" />
+                 <label for="threetab">3 Members</label>
+                 </p>
+				  </div>
+	      </div>
+				  
+                  <br>
+           
+ <div class="center" id = "two">
+                     
+     <div class="row">
+     <div class = "col s12 l4 m8 offset-m2" id ="a">
+                           <form class="col s12">
+                               <div class="chip  blue darken-1">
+                        <span class = "white-text">First Member<span>
+                        </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="firstname2m1" type="text" class="validate" name = "firstname2m1" required>
+                                    <label for="firstname2m1">First Name</label>
+                                 </div>
+                                 <div class="input-field col s6">
+                                    <input id="lastname2m1" type="text" class="validate" name="lastname2m1" required>
+                                    <label for="lastname2m1">Last Name</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s12">
+                                    <input id="email2m1" type="email" class="validate">
+                                    <label for="email2m1">Email</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <select>
+                                       <option value="" disabled selected>Choose</option>
+                                       <option value="1">AKGEC</option>
+                                       <option value="2">Others</option>
+                                    </select>
+                                    <label>College</label>
+                                 </div>
+                                 <div class="input-field col s6">
+                                    <input id="others2m1" type="text" class="validate" name="others2m1" required>
+                                    <label for="others2m1">others</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s12">
+                                    <input id="stdno2m1" type="text" class="validate">
+                                    <label for="stdno2m1">Student No.</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <select>
+                                       <option value="" disabled selected>Choose</option>
+                                       <option value="1">CSE</option>
+                                       <option value="2">IT</option>
+                                       <option value="3">ECE</option>
+                                       <option value="4">EN</option>
+                                       <option value="5">EI</option>
+                                       <option value="6">ME</option>
+                                       <option value="7">CIVIL</option>
+                                       <option value="8">MBA</option>
+                                       <option value="9">MCA</option>
+                                       <option value="10">Others</option>
+                                    </select>
+                                    <label>Branch</label>
+                                 </div>
+                                 <div class="input-field col s6">
+                                    <select>
+                                       <option value="" disabled selected>Choose</option>
+                                       <option value="1">I</option>
+                                       <option value="2">II</option>
+                                       <option value="3">III</option>
+                                       <option value="4">IV</option>
+                                    </select>
+                                    <label>Year</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s12">
+                                    <input id="mob2m1" type="number" class="validate">
+                                    <label for="mob2m1">Contact Number</label>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class = "col s12 l4 m8 offset-m2" id = "b">						
+                         <div class="chip  blue darken-1">
+                        <span class = "white-text">Second Member<span>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <input id="firstname2m1" type="text" class="validate" name = "firstname2m1" required>
+                        <label for="firstname2m1">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="lastname2m1" type="text" class="validate" name="lastname2m1" required>
+                        <label for="lastname2m1">Last Name</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="email2m1" type="email" class="validate">
+                        <label for="email2m1">Email</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">AKGEC</option>
+                        <option value="2">Others</option>
+                        </select>
+                        <label>College</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="others2m1" type="text" class="validate" name="others2m1" required>
+                        <label for="others2m1">others</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="stdno2m1" type="text" class="validate">
+                        <label for="stdno2m1">Student No.</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">CSE</option>
+                        <option value="2">IT</option>
+                        <option value="3">ECE</option>
+                        <option value="4">EN</option>
+                        <option value="5">EI</option>
+                        <option value="6">ME</option>
+                        <option value="7">CIVIL</option>
+                        <option value="8">MBA</option>
+                        <option value="9">MCA</option>
+                        <option value="10">Others</option>
+                        </select>
+                        <label>Branch</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        </select>
+                        <label>Year</label>
+                        </div>
+                        </div>					
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="mob2m1" type="number" class="validate">
+                        <label for="mob2m1">Contact Number</label>
+                        </div>
+                        </div>
+                        </div>
+					
+                     <div class = "col s12 l4  m8 offset-m2" id = "three" id = "c">						
+                         <div class="chip  blue darken-1">
+                        <span class = "white-text">Third Member<span>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <input id="firstname2m1" type="text" class="validate" name = "firstname2m1" required>
+                        <label for="firstname2m1">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="lastname2m1" type="text" class="validate" name="lastname2m1" required>
+                        <label for="lastname2m1">Last Name</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="email2m1" type="email" class="validate">
+                        <label for="email2m1">Email</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">AKGEC</option>
+                        <option value="2">Others</option>
+                        </select>
+                        <label>College</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="others2m1" type="text" class="validate" name="others2m1" required>
+                        <label for="others2m1">others</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="stdno2m1" type="text" class="validate">
+                        <label for="stdno2m1">Student No.</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">CSE</option>
+                        <option value="2">IT</option>
+                        <option value="3">ECE</option>
+                        <option value="4">EN</option>
+                        <option value="5">EI</option>
+                        <option value="6">ME</option>
+                        <option value="7">CIVIL</option>
+                        <option value="8">MBA</option>
+                        <option value="9">MCA</option>
+                        <option value="10">Others</option>
+                        </select>
+                        <label>Branch</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        </select>
+                        <label>Year</label>
+                        </div>
+                        </div>					
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="mob2m1" type="number" class="validate">
+                        <label for="mob2m1">Contact Number</label>
+                        </div>
+                        </div>
+                       </div>	
+
+		   
+                        <div class="input-field col s10 offset-s1">
+                        <select>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        <option value="5">V</option>
+                        <option value="6">VI</option>
+                        </select>
+                        <label>Please Select Your Category</label>
+                        </div>
+                        <div class = "row">
+                        <div class="input-field col s12">
+						
+                        <button class="waves-effect waves-light btn">Submit</button>
+                        </div>
+                        </div>
+                        </form>
+                     </div>
+                  </div>
+              
+			
+           <footer class="page-footer blue-grey darken-4">
+              
+			  <div class="row">
+              <div class="col s12 center">
+              <h5 class="white-text">For any Queries, Contact:</h5>
+              <h6 class="grey-text text-lighten-4">Anmol Vashistha (7065246961)<br>Shivam Jain (9997188960)</h6>
+              </div>
+              </div>
+           </footer>         
+   </body>
+</html>
